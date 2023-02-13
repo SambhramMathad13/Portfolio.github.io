@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My port.....</title>
+    <script>
+        function uu()
+        {
+        
+            let x=document.forms["ff"]["fname"].value;
+            let y=document.forms["ff"]["lname"].value;
+            if(x==""&&y=="")
+            {
+                alert("please fill the name");
+            }
+            else
+            {
+            alert("Contact me - phone:7204701301 ");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="cont">
+        <div class="sidebar">
+           <br><br>
+
+            <nav>
+                <ul>
+                    <li> <a href="/index.html"> Home</a></li>
+                    <li><a href="/intro.html"> Skills</a></li>
+                    <li><a href="/edu.html">Education</a></li>
+                    <li><a href="/cv.html">CV</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <div class="main">
+     <div class="edu">
+        <div class="e">Contact me by filling the below form.</div><br><br>
+        <div class="mx-80 my-20 px-10 py-10 h-full bg-blue-200 border-2 border-blue-900">
+            <form class="form" name="ff">
+                <div class="fname">
+           First name : <input class="bg-blue-300 border-2 border-black" type="text" name="fname" required><br><br>
+           Last name : <input class="bg-blue-300 border-2 border-black" type="text" name="lname" required><br><br>
+           Email     : <input type="email" name="ename" required><br><br>
+           Phone  : <input  type="number" name="pname" required><br><br>
+          <button onclick="uu()">Submit</button>
+                </div>
+         </form>
+         </div>
+     </div>
+    </div>
+</div>
+    
+</body>
+</html>
